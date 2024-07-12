@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body>
+
+    <!--Responsive Navbar-->
+    <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">GREENDEN</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+            class="w-10 h-9 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Products</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--Products-->
+
+    <section class="text-center">
+        <h2 class="font-bold text-3xl mt-5">Our Products</h2>
+        <input type="text" class="border border-black mt-3 mb-5 p-2" placeholder="Search for a product..." style="width: 80%;">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-6">
+            <div>
+                <img src="/images/aloverapot.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
+                <p>Alovera Plant</p>
+                <p>$30</p>
+            </div>
+
+            <div>
+                <img src="/images/hibipot.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
+                <p>Hibiscus Plant</p>
+                <p>$30</p>
+            </div>
+
+            <div>
+                <img src="/images/lilypot.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
+                <p>Lily Plant</p>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="/images/plantpot.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
+                <p>Plant Pot</p>
+                <p>$15</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-6 mb-6">
+            <div>
+                <img src="/images/aloverapot.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
+                <p>Alovera Plant</p>
+                <p>$30</p>
+            </div>
+
+            <div>
+                <img src="/images/hibipot.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
+                <p>Hibiscus Plant</p>
+                <p>$30</p>
+            </div>
+
+            <div>
+                <img src="/images/lilypot.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
+                <p>Lily Plant</p>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="/images/plantpot.jpg"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
+                <p>Plant Pot</p>
+                <p>$15</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Footer-->
+    <section class="text-black bg-green-100 p-10">
+        <h1 class="font-bold text-3xl mb-3">Greenden</h1>
+        <p class="mb-3">The Standard Chunk of Lorem ipsum used since the 1500s reproduced below for those interest</p>
+        <p>@ 2024 greenden.com</p>
+    </section>
+
+</body>
+</html>
