@@ -11,8 +11,8 @@
     <!--Responsive Navbar-->
     <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
-            class="w-10 h-9 md:hidden">
+        <svg id="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor"
+            class="w-10 h-9 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -32,68 +32,88 @@
 
     </nav>
 
+    <!--Side Nav-->
+    <nav id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col  items-center gap-10 text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Products</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
     <!--Products-->
 
     <section class="text-center">
         <h2 class="font-bold text-3xl mt-5">Our Products</h2>
-        <input type="text" class="border border-black mt-3 mb-5 p-2" placeholder="Search for a product..." style="width: 80%;">
+        <input id="search" type="text" class="border border-black mt-3 mb-5 p-2" placeholder="Search for a product..." style="width: 80%;">
 
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-6">
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-6">
             <div>
                 <img src="./images/aloverapot.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
-                <p>Alovera Plant</p>
+                <h1>Alovera Plant</h1>
                 <p>$30</p>
             </div>
 
             <div>
                 <img src="./images/hibipot.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
-                <p>Hibiscus Plant</p>
+                <h1>Hibiscus Plant</h1>
                 <p>$30</p>
             </div>
 
             <div>
                 <img src="./images/lilypot.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
-                <p>Lily Plant</p>
+                <h1>Lily Plant</h1>
                 <p>$20</p>
             </div>
 
             <div>
                 <img src="./images/plantpot.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
-                <p>Plant Pot</p>
+                <h1>Plant Pot</h1>
                 <p>$15</p>
             </div>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-6 mb-6">
+        <div id="product-container2" class="grid grid-cols-2 md:grid-cols-4 mt-6 mb-6">
             <div>
                 <img src="./images/aloverapot.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
-                <p>Alovera Plant</p>
+                <h1>Alovera Plant</h1>
                 <p>$30</p>
             </div>
 
             <div>
                 <img src="./images/hibipot.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
-                <p>Hibiscus Plant</p>
+                <h1>Hibiscus Plant</h1>
                 <p>$30</p>
             </div>
 
             <div>
                 <img src="./images/lilypot.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
-                <p>Lily Plant</p>
+                <h1>Lily Plant</h1>
                 <p>$20</p>
             </div>
 
             <div>
                 <img src="./images/plantpot.jpg"
                     class="inline hover:shadow-xl transform hover:-translate-y-2 cursor-pointer" alt="plant image">
-                <p>Plant Pot</p>
+                <h1>Plant Pot</h1>
                 <p>$15</p>
             </div>
         </div>
@@ -106,6 +126,8 @@
         <p class="mb-3">The Standard Chunk of Lorem ipsum used since the 1500s reproduced below for those interest</p>
         <p>@ 2024 greenden.com</p>
     </section>
+
+    <script src="product.js"></script>
 
 </body>
 </html>
